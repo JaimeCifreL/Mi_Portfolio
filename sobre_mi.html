@@ -1,0 +1,213 @@
+<!-- En este archivo se muestra toda mi información relacionada con el mundo
+    laboral de forma ordenada. 
+    Aquí he añadido un filtro con despleble para que el usuario pueda filtrar los 
+    proyectos por tecnología, un formulario no funcional, animaciones de los elementos al hacer scroll, y un botón para acceder a mi GitHub.
+    y diseñoas especiales en los botones.
+    Los detalles de cada proyecto todavía no están disponibles, pero, más adelante,
+    añadiré la posibilidad de acceder a más detalles e información de éstos.
+    Posiblemente, en un futuro, añada más secciones. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mí</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/png" sizes="192x192" href="img_pwa/imagen1.png">
+    <meta name="theme-color" content="#1976d2">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+</head>
+<body>
+    <!-- Header/Navegación principal -->
+    <header class="header">
+        <div class="logo">Portfolio</div>
+        <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="main-nav">
+            <span class="hamburger"></span>
+        </button>
+        <nav id="main-nav" class="nav-menu">
+            <a href="index.html">Home</a>
+            <a href="sobre_mi.html" class="active">Sobre mí</a>
+            <a href="#proyectos" class="header-link">Proyectos</a>
+            <a href="#contacto" class="header-link">Contacto</a>
+        </nav>
+    </header>
+    <!-- Sección principal: Sobre Mí -->
+    <main class="about-main">
+        <h1 class="section-title">Sobre Mí</h1>
+        <div class="about-underline"></div>
+        <section class="about-content animate-on-scroll" data-animate="fade-up">
+            <div class="about-img-container">
+                <img src="img/JaimeCifre.jpg" alt="Foto de perfil" class="about-img">
+            </div>
+            <div class="about-text">
+                <p>Soy un desarrollador apasionado por crear experiencias digitales que marquen la diferencia. Con más de 2 años de experiencia, estoy trabajando en proyectos diversos que van desde aplicaciones web hasta soluciones complejas.</p>
+                <p>Mi enfoque combina creatividad técnica con atención al detalle, asegurando que cada proyecto no solo funcione perfectamente, sino que también brinde una experiencia excepcional y única al usuario.</p>
+            </div>
+        </section>
+    </main>
+<!-- Sección de Habilidades -->
+<section class="skills-section animate-on-scroll" data-animate="fade-left">
+    <div class="skills-cards">
+        <!-- Skill Card Template -->
+        <div class="skill-card">
+            <div class="skill-icon">
+                <svg width="36" height="36" fill="none" stroke="#2176ff" stroke-width="2.2" viewBox="0 0 24 24"><polyline points="8 4 3 12 8 20"/><polyline points="16 4 21 12 16 20"/></svg>
+            </div>
+            <div class="skill-title">Desarrollo Web</div>
+            <div class="skill-desc">Exerimentado en Python, Django, HTML y CSS y siempre aprendiendo  cosas nuevas</div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon">
+                <svg width="36" height="36" fill="none" stroke="#2176ff" stroke-width="2.2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="8.5" cy="10.5" r="1"/><circle cx="15.5" cy="10.5" r="1"/><circle cx="12" cy="15" r="1"/></svg>
+            </div>
+            <div class="skill-title">Diseño UI/UX</div>
+            <div class="skill-desc">Creación de interfaces intuitivas y atractivas</div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon">
+                <svg width="36" height="36" fill="none" stroke="#2176ff" stroke-width="2.2" viewBox="0 0 24 24"><path d="M5 19l4-4"/><path d="M15 3l6 6-8 8-6-6z"/><path d="M16 7l1.5 1.5"/></svg>
+            </div>
+            <div class="skill-title">Optimización</div>
+            <div class="skill-desc">Aplicaciones rápidas y eficientes para mejor experiencia</div>
+        </div>
+        <div class="skill-card">
+            <div class="skill-icon">
+                <svg width="36" height="36" fill="none" stroke="#2176ff" stroke-width="2.2" viewBox="0 0 24 24"><circle cx="8" cy="10" r="3"/><circle cx="16" cy="10" r="3"/><path d="M2 20c0-2.5 3-4.5 6-4.5s6 2 6 4.5"/><path d="M14 20c0-1.5 2-2.5 4-2.5s4 1 4 2.5"/></svg>
+            </div>
+            <div class="skill-title">Trabajo en Equipo</div>
+            <div class="skill-desc">Colaboración efectiva en proyectos multidisciplinarios</div>
+        </div>
+    </div>
+</section>
+<!-- Sección de Tecnologías -->
+<section class="tech-section animate-on-scroll" data-animate="fade-right">
+    <h2 class="tech-title">Tecnologías que domino</h2>
+    <div class="tech-chips">
+        <span class="tech-chip">Python</span><span class="tech-chip">HTML</span><span class="tech-chip">CSS</span><span class="tech-chip">JavaScript</span><span class="tech-chip">Tailwind CSS</span><span class="tech-chip">MongoDB</span><span class="tech-chip">PostgreSQL</span><span class="tech-chip">Git</span><span class="tech-chip">Figma</span><span class="tech-chip">Docker</span><span class="tech-chip">REST APIs</span>
+    </div>
+</section>
+
+<!-- Separador visual antes de Proyectos -->
+<div class="section-transition" id="proyectos"></div>
+<!-- Sección de Proyectos -->
+<section class="projects-section animate-on-scroll" data-animate="fade-up">
+        <h2 class="section-title">Proyectos Destacados</h2>
+        <div class="about-underline"></div>
+        <p class="projects-desc">Explora una selección de mis trabajos más recientes y descubre cómo transformo ideas en realidades digitales</p>
+        <div id="vue-projects">
+          <div class="project-filter">
+            <label for="tech-filter">Filtrar por tecnología:</label>
+            <select id="tech-filter" v-model="selectedTech">
+              <option v-for="tech in techOptions" :key="tech" :value="tech">{{ tech === 'all' ? 'Todas' : tech }}</option>
+            </select>
+          </div>
+          <div class="projects-cards">
+            <project-card v-for="(project, i) in visibleProjects" :key="project.id" :project="project" :index="i" :total="visibleProjects.length"></project-card>
+            <button v-if="!showAllProjects && isMobile && filteredProjects.length > 2" class="see-more-btn" @click="showMoreProjects" style="margin: 24px auto 0 auto; display: block; padding: 12px 32px; border-radius: 24px; background: #2176ff; color: #fff; font-size: 1.1rem; border: none; cursor: pointer;">Ver más proyectos</button>
+          </div>
+          <!-- Modal de detalles -->
+          <div v-if="showModal" class="project-modal" @click.self="closeModal">
+            <div class="project-modal-content">
+              <button class="modal-close" @click="closeModal">&times;</button>
+              <img :src="activeProject.image" :alt="activeProject.title" class="modal-img" />
+              <h3 class="modal-title">{{ activeProject.title }}</h3>
+              <p class="modal-desc">{{ activeProject.description }}</p>
+              <div class="modal-tags">
+                <span v-for="tech in activeProject.technologies" :key="tech">{{ tech }}</span>
+              </div>
+              <div class="modal-details">{{ activeProject.details }}</div>
+            </div>
+          </div>
+        </div>
+</section>
+
+<!-- Botón para ver más en GitHub -->
+<section>
+    <div class="github-btn-container">
+        <a href="https://github.com/JaimeCifreL" target="_blank" class="github-btn">
+            <span class="github-icon">
+                <svg width="32" height="32" fill="white" viewBox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.75.41-1.27.74-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 2.92-.39c.99 0 1.99.13 2.92.39 2.22-1.49 3.2-1.18 3.2-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.41-5.27 5.7.42.36.79 1.09.79 2.2 0 1.59-.01 2.87-.01 3.26 0 .31.21.68.8.56C20.71 21.39 24 17.08 24 12c0-6.27-5.23-11.5-12-11.5z"/></svg>
+            </span>
+            <span class="github-btn-text">Ver más en GitHub</span>
+        </a>
+    </div>
+</section>
+<!-- Separador visual antes de Contacto -->
+<div class="section-transition" id="contacto"></div>
+<!-- Sección de Contacto -->
+<section class="contact-section animate-on-scroll" data-animate="fade-up">
+    <h2 class="section-title">Contáctame</h2>
+    <div class="about-underline"></div>
+    <p class="projects-desc">¿Tienes algún proyecto en mente?</p>
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2 class="contact-title">Información de Contacto</h2>
+            <!-- Contact Items -->
+            <div class="contact-item">
+                <span class="contact-icon"><svg width="28" height="28" fill="none" stroke="#2176ff" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16v16H4z" fill="none"/><path d="M4 4l8 8 8-8"/></svg></span>
+                <div><div class="contact-label">Email</div><div class="contact-value"><a href="mailto:tu.email@ejemplo.com">jaimecifrelliteras@gmail.com</a></div></div>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon"><svg width="28" height="28" fill="none" stroke="#2176ff" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92V19a2 2 0 0 1-2.18 2A19.72 19.72 0 0 1 3 5.18 2 2 0 0 1 5 3h2.09a2 2 0 0 1 2 1.72c.13 1.05.37 2.07.72 3.06a2 2 0 0 1-.45 2.11l-.27.27a16 16 0 0 0 6.29 6.29l.27-.27a2 2 0 0 1 2.11-.45c.99.35 2.01.59 3.06.72A2 2 0 0 1 22 16.92z"/></svg></span>
+                <div><div class="contact-label">Teléfono</div><div class="contact-value"><a href="tel:+34123456789">+34 619 718 776</a></div></div>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon"><svg width="28" height="28" fill="none" stroke="#2176ff" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="10" r="3"/><path d="M12 2a8 8 0 0 1 8 8c0 7-8 12-8 12S4 17 4 10a8 8 0 0 1 8-8z"/></svg></span>
+                <div><div class="contact-label">Ubicación</div><div class="contact-value">Palma de Mallorca, España</div></div>
+            </div>
+            <!-- Redes Sociales -->
+            <div class="contact-social">
+                <div class="contact-social-title">Sígueme en Redes Sociales</div>
+                <div class="contact-social-desc">Conéctate conmigo en mis redes sociales para estar al tanto de mis últimos proyectos y contenido</div>
+                <div class="contact-social-icons">
+                    <a href="https://github.com/JaimeCifreL" title="GitHub"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.75.41-1.27.74-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 2.92-.39c.99 0 1.99.13 2.92.39 2.22-1.49 3.2-1.18 3.2-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.41-5.27 5.7.42.36.79 1.09.79 2.2 0 1.59-.01 2.87-.01 3.26 0 .31.21.68.8.56C20.71 21.39 24 17.08 24 12c0-6.27-5.23-11.5-12-11.5z"/></svg></a>
+                    <a href="https://www.linkedin.com/in/jaime-cifre-lliteras-b70581376/" title="LinkedIn"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/></svg></a>
+                    <a href="#" title="Instagram"><svg width="28" height="28" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17" cy="7" r="1.2"/></svg></a>
+                </div>
+            </div>
+        </div>
+        <form class="contact-form">
+            <label>Nombre Completo
+                <input type="text" placeholder="Tu nombre" required>
+            </label>
+            <label>Email
+                <input type="email" placeholder="tu.email@ejemplo.com" required>
+            </label>
+            <label>Asunto
+                <input type="text" placeholder="¿De qué se trata?" required>
+            </label>
+            <label>Mensaje
+                <textarea placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+            </label>
+            <button type="submit" class="contact-btn">
+                <svg width="22" height="22" fill="none" stroke="#fff" stroke-width="2" viewBox="0 0 24 24" style="vertical-align:middle;margin-right:8px;"><path d="M22 2L11 13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                Enviar Mensaje
+            </button>
+        </form>
+    </div>
+</section>
+
+</script>
+<!-- Scripts: animaciones, filtro de proyectos, menú móvil -->
+<script src="js/main.js"></script>
+<script src="js/vue-projects.js"></script>
+</body>
+<footer class="main-footer">
+    <div class="footer-content">
+        <div class="footer-left">&copy; 2026 Jaime Cifre. Todos los derechos reservados.</div>
+        <div class="footer-social">
+            <a href="https://github.com/JaimeCifreL" target="_blank" title="GitHub"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.78 1.2 1.78 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.75.41-1.27.74-1.56-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .98-.31 3.2 1.18a11.1 11.1 0 0 1 2.92-.39c.99 0 1.99.13 2.92.39 2.22-1.49 3.2-1.18 3.2-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.84 1.19 3.1 0 4.43-2.7 5.41-5.27 5.7.42.36.79 1.09.79 2.2 0 1.59-.01 2.87-.01 3.26 0 .31.21.68.8.56C20.71 21.39 24 17.08 24 12c0-6.27-5.23-11.5-12-11.5z"/></svg></a>
+            <a href="https://www.linkedin.com/in/jaime-cifre-lliteras-b70581376/" target="_blank" title="LinkedIn"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/></svg></a>
+        </div>
+    </div>
+</footer>
+<script>
+        if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                        navigator.serviceWorker.register('service-worker.js');
+                });
+        }
+</script>
+</body>
+</html>

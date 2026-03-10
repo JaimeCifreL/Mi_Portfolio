@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalle del Proyecto</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+</head>
+<body>
+  <div id="project-detail" style="max-width:700px;margin:2rem auto;padding:1rem;">
+    <button @click="goBack" style="margin-bottom:1rem;padding:0.5rem 1.2rem;border-radius:8px;background:#2176ff;color:#fff;border:none;cursor:pointer;">Volver</button>
+    <div v-if="project">
+      <img :src="project.image" :alt="project.title" style="width:100%;border-radius:12px;margin-bottom:1.2rem;">
+      <h1 style="color:#2176ff;font-size:2rem;margin-bottom:0.5rem;">{{ project.title }}</h1>
+      <p style="font-size:1.1rem;color:#444;margin-bottom:1rem;">{{ project.description }}</p>
+      <div style="margin-bottom:1rem;">
+        <strong>Tecnologías usadas:</strong>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:0.5rem;">
+          <span v-for="tech in project.technologies" :key="tech" style="background:#eaf1ff;color:#2176ff;border-radius:6px;padding:0.2rem 0.7rem;font-size:0.95rem;font-weight:500;">{{ tech }}</span>
+        </div>
+      </div>
+      <div style="font-size:1rem;color:#333;">{{ project.details }}</div>
+    </div>
+    <div v-else>
+      <p>No se encontró el proyecto.</p>
+    </div>
+  </div>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const projectId = urlParams.get('id');
+    const app = Vue.createApp({
+      data() {
+        return {
+          project: null
+        };
+      },
+      methods: {
+        async fetchProject() {
+          const res = await fetch('../js/projects.json');
+          const projects = await res.json();
+          this.project = projects.find(p => p.id == projectId);
+        },
+        goBack() {
+          window.history.back();
+        }
+      },
+      mounted() {
+        this.fetchProject();
+      }
+    });
+    app.mount('#project-detail');
+  </script>
+</body>
+</html>

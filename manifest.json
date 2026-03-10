@@ -1,0 +1,20 @@
+{
+  "short_name": "MiPWA",
+  "name": "Jaime Cifre Lliteras - Portfolio",
+  "icons": [
+    {
+      "src": "img_pwa/imagen1.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img_pwa/imagen2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1976d2",
+  "background_color": "#ffffff"
+}
