@@ -102,10 +102,17 @@
               <option v-for="tech in techOptions" :key="tech" :value="tech">{{ tech === 'all' ? 'Todas' : tech }}</option>
             </select>
           </div>
-          <div class="projects-cards">
-            <project-card v-for="(project, i) in visibleProjects" :key="project.id" :project="project" :index="i" :total="visibleProjects.length"></project-card>
-            <button v-if="!showAllProjects && isMobile && filteredProjects.length > 2" class="see-more-btn" @click="showMoreProjects" style="margin: 24px auto 0 auto; display: block; padding: 12px 32px; border-radius: 24px; background: #2176ff; color: #fff; font-size: 1.1rem; border: none; cursor: pointer;">Ver más proyectos</button>
-          </div>
+                    <div class="carousel-wrapper">
+                        <button class="carousel-arrow prev" aria-label="Anterior" @click="scrollCarousel('left')">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                        </button>
+                        <div class="projects-cards" tabindex="0">
+                            <project-card v-for="(project, i) in visibleProjects" :key="project.id" :project="project" :index="i" :total="visibleProjects.length"></project-card>
+                        </div>
+                        <button class="carousel-arrow next" aria-label="Siguiente" @click="scrollCarousel('right')">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                        </button>
+                    </div>
           <!-- Modal de detalles -->
           <div v-if="showModal" class="project-modal" @click.self="closeModal">
             <div class="project-modal-content">
@@ -187,8 +194,6 @@
         </form>
     </div>
 </section>
-
-</script>
 <!-- Scripts: animaciones, filtro de proyectos, menú móvil -->
 <script src="js/main.js"></script>
 <script src="js/vue-projects.js"></script>
