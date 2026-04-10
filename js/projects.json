@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "E-Commerce Platform",
+    "description": "Plataforma completa de comercio electrónico con carrito de compras, pasarela de pago y panel de administración.",
+    "image": "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&w=600&q=80",
+    "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
+    "details": "Proyecto de e-commerce con autenticación, gestión de productos, pagos y panel de administración."
+  },
+  {
+    "id": 2,
+    "title": "Task Management App",
+    "description": "Aplicación de gestión de tareas con funcionalidades de colaboración en tiempo real y seguimiento de proyectos.",
+    "image": "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&w=600&q=80",
+    "technologies": ["React", "TypeScript", "Firebase", "Tailwind"],
+    "details": "App para equipos con chat, notificaciones y tablero Kanban."
+  },
+  {
+    "id": 3,
+    "title": "Mobile App Design",
+    "description": "Diseño de aplicación móvil moderna y funcional.",
+    "image": "https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&w=600&q=80",
+    "technologies": ["React Native", "Expo"],
+    "details": "Prototipo y desarrollo de interfaz para app móvil."
+  },
+  {
+    "id": 4,
+    "title": "Portfolio Website",
+    "description": "Sitio web personal para mostrar proyectos y habilidades.",
+    "image": "https://images.pexels.com/photos/1707828/pexels-photo-1707828.jpeg?auto=compress&w=600&q=80",
+    "technologies": ["Next.js", "Framer Motion"],
+    "details": "Animaciones, diseño responsive y optimización SEO."
+  },
+  {
+    "id": 5,
+    "title": "Social Media Dashboard",
+    "description": "Panel para visualizar métricas de redes sociales en tiempo real.",
+    "image": "https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&w=600&q=80",
+    "technologies": ["React", "Chart.js"],
+    "details": "Gráficas interactivas y filtros avanzados."
+  },
+  {
+    "id": 6,
+    "title": "Real Estate Platform",
+    "description": "Plataforma para gestión y búsqueda de propiedades inmobiliarias.",
+    "image": "https://images.pexels.com/photos/1181678/pexels-photo-1181678.jpeg?auto=compress&w=600&q=80",
+    "technologies": ["Next.js", "PostgreSQL"],
+    "details": "Buscador avanzado, mapas y panel de administración."
+  }
+]

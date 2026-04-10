@@ -1,0 +1,35 @@
+/* Mobile Nav Styles (compact) */
+.nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:10px;margin-left:auto;z-index:20}
+.hamburger{display:block;width:28px;height:3px;background:#fff;border-radius:2px;position:relative;transition:background .2s}
+.hamburger::before,.hamburger::after{content:'';position:absolute;left:0;width:28px;height:3px;background:#fff;border-radius:2px;transition:transform .2s,top .2s,bottom .2s}
+.hamburger::before{top:-9px}
+.hamburger::after{top:9px}
+
+@media(max-width:800px){header nav,.nav-menu{position:absolute;top:100%;right:0;left:0;background:rgba(30,40,90,.98);flex-direction:column;align-items:flex-start;box-shadow:0 4px 24px rgba(30,40,90,.07);padding:0 0 18px 0;display:none;z-index:9999}.nav-menu.open{display:flex}.nav-toggle{display:none !important}header nav a,.nav-menu a{margin:18px 24px 0 24px;font-size:1.15rem;color:#fff;width:100%;text-align:left}header{flex-wrap:wrap;padding:18px 18px 0 18px}}
+body{margin:0;padding:0;font-family:'Segoe UI',Arial,sans-serif}
+
+ .bg-main{position:relative;min-height:100vh;background:url('../img/código-fuente-de-programación-equipo-tecnología-moderna-aplicación-codificación-por-desarrollador-programadores-software-en-241804713.webp') center/cover no-repeat}
+.bg-overlay{position:absolute;top:0;left:0;width:100%;height:100%;background:linear-gradient(120deg,rgba(80,0,120,.7) 0%,rgba(0,0,120,.5) 100%);z-index:1}
+header{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:18px 16px 0 16px}
+.logo{font-weight:bold;font-size:1.4rem;color:#fff;letter-spacing:1px}
+nav a{color:#fff;text-decoration:none;margin:0 18px;font-size:1.1rem;font-weight:500}
+nav a:last-child{margin-right:0}
+main{position:relative;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:80vh;text-align:center;padding:0 8px}
+.presentation{margin-top:32px}
+.presentation .hello{color:#b3b3ff;font-size:1.1rem;margin-bottom:10px}
+.presentation .name{color:#fff;font-size:2.2rem;font-weight:bold;margin-bottom:18px;letter-spacing:2px}
+.presentation .role{color:#fff;font-size:1.1rem;font-weight:400;margin-bottom:22px}
+.presentation .desc{color:#e0e0e0;font-size:1rem;max-width:98vw;margin:0 auto 38px auto}
+.btn-group{display:flex;flex-direction:column;gap:14px;margin-bottom:38px;width:100%;align-items:center;justify-content:center}
+.btn-main{background:#2176ff;color:#fff;font-size:1rem;padding:12px 28px;border-radius:30px;text-decoration:none;font-weight:600;box-shadow:0 2px 8px rgba(33,118,255,.15);transition:background .2s}
+.btn-main:hover{background:#185ec7}
+.btn-outline{border:2px solid #fff;color:#fff;font-size:1rem;padding:12px 28px;border-radius:30px;text-decoration:none;font-weight:600;background:transparent;transition:background .2s,color .2s}
+.btn-outline:hover{background:#fff;color:#2176ff}
+.arrow{margin-bottom:18px;color:#fff;font-size:2.2rem;animation:floatArrow 1.6s ease-in-out infinite alternate;display:inline-block}
+@keyframes floatArrow{0%{transform:translateY(0)}100%{transform:translateY(-18px)}}
+.socials{display:flex;justify-content:center;gap:24px}
+@media(min-width:600px){.presentation .name{font-size:3.2rem}.presentation .role{font-size:1.5rem}.btn-group{flex-direction:row;gap:24px;justify-content:center}main{padding:0 24px}}
+
+@media(min-width:900px){header{padding:32px 60px 0 60px}.logo{font-size:1.7rem}.presentation{margin-top:60px}.presentation .hello{font-size:1.5rem}.presentation .name{font-size:4.5rem}.presentation .role{font-size:2rem}.presentation .desc{font-size:1.2rem;max-width:700px}.socials{gap:32px}}
+.socials a{color:#fff;font-size:2rem;text-decoration:none;transition:color .2s}
+.socials a:hover{color:#2176ff}
