@@ -4,7 +4,7 @@
     "title": "E-Commerce Platform",
     "description": "Plataforma completa de comercio electrónico con carrito de compras, pasarela de pago y panel de administración.",
     "image": "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&w=600&q=80",
-    "technologies": ["React", "Node.js", "MongoDB", "Stripe"],
+    "technologies": ["HTML", "CSS", "JavaScript"],
     "details": "Proyecto de e-commerce con autenticación, gestión de productos, pagos y panel de administración."
   },
   {
