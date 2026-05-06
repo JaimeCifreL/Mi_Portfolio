@@ -1,11 +1,12 @@
 [
   {
     "id": 1,
-    "title": "E-Commerce Platform",
-    "description": "Plataforma completa de comercio electrónico con carrito de compras, pasarela de pago y panel de administración.",
-    "image": "https://images.pexels.com/photos/5632402/pexels-photo-5632402.jpeg?auto=compress&w=600&q=80",
+    "title": "SaCaseta",
+    "description": "Sitio web para una tienda familiar de interiorismo y decoración con más de 30 años de historia, donde el trato cercano y lo auténtico son los protagonistas.",
+    "image": "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&w=600&q=80",
     "technologies": ["HTML", "CSS", "JavaScript"],
-    "details": "Proyecto de e-commerce con autenticación, gestión de productos, pagos y panel de administración."
+    "details": "Web multi-página con carrusel hero, carga dinámica de header y footer, menú hamburguesa responsive y secciones de servicios (Interiorismo, Decoración y Proyectos). Desarrollada íntegramente con HTML, CSS y JavaScript vanilla, sin frameworks.",
+    "github": "https://github.com/JaimeCifreL/LaCaseta"
   },
   {
     "id": 2,
