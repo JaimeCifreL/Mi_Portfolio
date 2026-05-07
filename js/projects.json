@@ -23,7 +23,7 @@
       "CSS",
       "pywin32"
     ],
-    "details": "Aplicación híbrida Excel + visor web que permite vincular PDFs a celdas, seleccionar regiones visualmente, guardar coordenadas, extraer texto automáticamente, analizar tablas y preparar automatizaciones futuras con IA y OCR."
+    "details": "Aplicación híbrida Excel + visor web que permite vincular PDFs a celdas, seleccionar regiones visualmente, guardar coordenadas, extraer texto automáticamente, analizar tablas y preparar automatizaciones futuras con IA y OCR.",
     "github": "https://github.com/JaimeCifreL/notDataSniper"
   },
   {
