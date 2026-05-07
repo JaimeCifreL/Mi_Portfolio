@@ -12,7 +12,7 @@
     "id": 2,
     "title": "notDataSniper",
     "description": "Sistema experimental tipo DataSnipper para vincular evidencias documentales a Excel mediante coordenadas visuales y extracción de contenido.",
-    "image": "../img/notDataSniper.png",
+    "image": "img/notDataSniper.png",
     "technologies": [
       "Python",
       "Flask",

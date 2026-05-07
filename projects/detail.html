@@ -36,7 +36,7 @@
   <div id="project-detail" style="max-width:700px;margin:2rem auto;padding:1rem;">
     <button @click="goBack" style="margin-bottom:1rem;padding:0.5rem 1.2rem;border-radius:8px;background:#2176ff;color:#fff;border:none;cursor:pointer;">Volver</button>
     <div v-if="project">
-      <img :src="project.image" :alt="project.title" style="width:100%;border-radius:12px;margin-bottom:1.2rem;">
+      <img :src="resolvedImage" :alt="project.title" style="width:100%;border-radius:12px;margin-bottom:1.2rem;">
       <h1 style="color:#2176ff;font-size:2rem;margin-bottom:0.5rem;">{{ project.title }}</h1>
       <p style="font-size:1.1rem;color:#444;margin-bottom:1rem;">{{ project.description }}</p>
       <div style="margin-bottom:1rem;">
@@ -74,6 +74,16 @@
         return {
           project: null
         };
+      },
+      computed: {
+        resolvedImage() {
+          if (!this.project) return '';
+          const img = this.project.image;
+          // Si es una URL externa, usarla tal cual
+          if (img.startsWith('http://') || img.startsWith('https://')) return img;
+          // Si es una ruta relativa a la raíz (ej: img/...), añadir ../
+          return '../' + img;
+        }
       },
       methods: {
         async fetchProject() {
