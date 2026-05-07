@@ -9,22 +9,22 @@
     "github": "https://github.com/JaimeCifreL/LaCaseta"
   },
   {
-  "id": 2,
-  "title": "notDataSniper",
-  "description": "Sistema experimental tipo DataSnipper para vincular evidencias documentales a celdas de Excel mediante coordenadas visuales y extracción de contenido.",
-  "image": "img/notDataSniper.png",
-  "technologies": [
-    "Python",
-    "Flask",
-    "Excel VBA",
-    "PyMuPDF",
-    "JavaScript",
-    "HTML",
-    "CSS",
-    "pywin32"
-  ],
-  "details": "Aplicación híbrida Excel + visor web que permite vincular PDFs a celdas, seleccionar regiones visualmente, guardar coordenadas, extraer texto automáticamente, analizar tablas y preparar automatizaciones futuras con IA y OCR."
-}
+    "id": 2,
+    "title": "notDataSniper",
+    "description": "Sistema experimental tipo DataSnipper para vincular evidencias documentales a celdas de Excel mediante coordenadas visuales y extracción de contenido.",
+    "image": "img/notDataSniper.png",
+    "technologies": [
+      "Python",
+      "Flask",
+      "Excel VBA",
+      "PyMuPDF",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "pywin32"
+    ],
+    "details": "Aplicación híbrida Excel + visor web que permite vincular PDFs a celdas, seleccionar regiones visualmente, guardar coordenadas, extraer texto automáticamente, analizar tablas y preparar automatizaciones futuras con IA y OCR."
+  },
   {
     "id": 3,
     "title": "Mobile App Design",
