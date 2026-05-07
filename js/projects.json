@@ -11,7 +11,7 @@
   {
     "id": 2,
     "title": "notDataSniper",
-    "description": "Sistema experimental tipo DataSnipper para vincular evidencias documentales a celdas de Excel mediante coordenadas visuales y extracción de contenido.",
+    "description": "Sistema experimental tipo DataSnipper para vincular evidencias documentales a Excel mediante coordenadas visuales y extracción de contenido.",
     "image": "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&w=600&q=80",
     "technologies": [
       "Python",
