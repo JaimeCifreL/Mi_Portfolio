@@ -5,14 +5,14 @@
     "description": "Sitio web para una tienda familiar de interiorismo y decoración con más de 30 años de historia, donde el trato cercano y lo auténtico son los protagonistas.",
     "image": "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&w=600&q=80",
     "technologies": ["HTML", "CSS", "JavaScript"],
-    "details": "Web multi-página con carrusel hero, carga dinámica de header y footer, menú hamburguesa responsive y secciones de servicios (Interiorismo, Decoración y Proyectos). Desarrollada íntegramente con HTML, CSS y JavaScript vanilla, sin frameworks.",
+    "details": "Web multi-página con carrusel hero, carga dinámica de header y footer, menú hamburguesa responsive y secciones de servicios (Interiorismo, Decoración y Proyectos). Desarrollada [...]",
     "github": "https://github.com/JaimeCifreL/LaCaseta"
   },
   {
     "id": 2,
     "title": "notDataSniper",
     "description": "Sistema experimental tipo DataSnipper para vincular evidencias documentales a Excel mediante coordenadas visuales y extracción de contenido.",
-    "image": "https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg?auto=compress&w=600&q=80",
+    "image": "img/notDataSniper.png",
     "technologies": [
       "Python",
       "Flask",
@@ -23,7 +23,7 @@
       "CSS",
       "pywin32"
     ],
-    "details": "Aplicación híbrida Excel + visor web que permite vincular PDFs a celdas, seleccionar regiones visualmente, guardar coordenadas, extraer texto automáticamente, analizar tablas y preparar automatizaciones futuras con IA y OCR.",
+    "details": "Aplicación híbrida Excel + visor web que permite vincular PDFs a celdas, seleccionar regiones visualmente, guardar coordenadas, extraer texto automáticamente, analizar tablas y [...]",
     "github": "https://github.com/JaimeCifreL/notDataSniper"
   },
   {
