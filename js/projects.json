@@ -9,13 +9,22 @@
     "github": "https://github.com/JaimeCifreL/LaCaseta"
   },
   {
-    "id": 2,
-    "title": "Task Management App",
-    "description": "Aplicación de gestión de tareas con funcionalidades de colaboración en tiempo real y seguimiento de proyectos.",
-    "image": "https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&w=600&q=80",
-    "technologies": ["React", "TypeScript", "Firebase", "Tailwind"],
-    "details": "App para equipos con chat, notificaciones y tablero Kanban."
-  },
+  "id": 2,
+  "title": "notDataSniper",
+  "description": "Sistema experimental tipo DataSnipper para vincular evidencias documentales a celdas de Excel mediante coordenadas visuales y extracción de contenido.",
+  "image": "https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&w=600&q=80",
+  "technologies": [
+    "Python",
+    "Flask",
+    "Excel VBA",
+    "PyMuPDF",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "pywin32"
+  ],
+  "details": "Aplicación híbrida Excel + visor web que permite vincular PDFs a celdas, seleccionar regiones visualmente, guardar coordenadas, extraer texto automáticamente, analizar tablas y preparar automatizaciones futuras con IA y OCR."
+}
   {
     "id": 3,
     "title": "Mobile App Design",
