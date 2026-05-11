@@ -27,14 +27,12 @@
     "github": "https://github.com/JaimeCifreL/notDataSniper"
   },
   {
-    "id": 3,
-    "title": "Snippet",
-    "description": "Base de conocimiento personal para guardar snippets de código, notas en Markdown, enlaces e imágenes, organizados en carpetas anidadas con temas personalizables.",
-    "image": "img/Snippet.png",
-    "technologies": ["React",
-    "Vite",
-    "JavaScript",
-    "CSS"],
-    "details": "Aplicación web con interfaz de escritorio construida en React y Vite que funciona como base de conocimiento personal. Permite crear snippets de cuatro tipos: código con resaltado de sintaxis por lenguaje (JavaScript, TypeScript, Python, Rust, Go, CSS, HTML, Bash, JSON, SQL, C++, Java), notas en Markdown con editor y vista previa en tiempo real, enlaces y imágenes mediante drag & drop. Los snippets se organizan en carpetas anidadas con colores personalizados, se pueden etiquetar, mover entre carpetas, fijar como favoritos y buscar por nombre, contenido o etiqueta. Incluye un modo quick note accesible con Ctrl+Shift+N que crea notas rápidas sin abrir el editor completo. El sistema de temas permite personalizar fondo, sidebar, tarjetas, texto y color de acento con presets incluidos (Light, Warm Dark, Graphite, Sepia, Nord, Dracula) o colores personalizados. Todo el estado (snippets, carpetas, ajustes, carpetas expandidas) se persiste automáticamente en localStorage sin necesidad de guardar manualmente. Los snippets de Markdown soportan tablas, checklists, citas, bloques de código con resaltado, código inline y enlaces internos entre snippets mediante el protocolo snippet:."  },
-  }
+  "id": 3,
+  "title": "Snippet",
+  "description": "Base de conocimiento personal para guardar snippets de código, notas en Markdown, enlaces e imágenes, organizados en carpetas anidadas con temas personalizables.",
+  "image": "img/Snippet.png",
+  "technologies": ["React", "Vite", "JavaScript", "CSS"],
+  "details": "Aplicación web con interfaz de escritorio construida en React y Vite que funciona como base de conocimiento personal. Permite crear snippets de cuatro tipos: código con resaltado de sintaxis por lenguaje (JavaScript, TypeScript, Python, Rust, Go, CSS, HTML, Bash, JSON, SQL, C++, Java), notas en Markdown con editor y vista previa en tiempo real, enlaces y imágenes mediante drag & drop. Los snippets se organizan en carpetas anidadas con colores personalizados, se pueden etiquetar, mover entre carpetas, fijar como favoritos y buscar por nombre, contenido o etiqueta. Incluye un modo quick note accesible con Ctrl+Shift+N que crea notas rápidas sin abrir el editor completo. El sistema de temas permite personalizar fondo, sidebar, tarjetas, texto y color de acento con presets incluidos (Light, Warm Dark, Graphite, Sepia, Nord, Dracula) o colores personalizados. Todo el estado (snippets, carpetas, ajustes, carpetas expandidas) se persiste automáticamente en localStorage sin necesidad de guardar manualmente. Los snippets de Markdown soportan tablas, checklists, citas, bloques de código con resaltado, código inline y enlaces internos entre snippets mediante el protocolo snippet:.",
+  "github": "https://github.com/JaimeCifreL/Snippet"
+}
 ]
