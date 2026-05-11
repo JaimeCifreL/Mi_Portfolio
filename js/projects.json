@@ -28,34 +28,13 @@
   },
   {
     "id": 3,
-    "title": "Mobile App Design",
-    "description": "Diseño de aplicación móvil moderna y funcional.",
-    "image": "https://images.pexels.com/photos/1181676/pexels-photo-1181676.jpeg?auto=compress&w=600&q=80",
-    "technologies": ["React Native", "Expo"],
-    "details": "Prototipo y desarrollo de interfaz para app móvil."
-  },
-  {
-    "id": 4,
-    "title": "Portfolio Website",
-    "description": "Sitio web personal para mostrar proyectos y habilidades.",
-    "image": "https://images.pexels.com/photos/1707828/pexels-photo-1707828.jpeg?auto=compress&w=600&q=80",
-    "technologies": ["Next.js", "Framer Motion"],
-    "details": "Animaciones, diseño responsive y optimización SEO."
-  },
-  {
-    "id": 5,
-    "title": "Social Media Dashboard",
-    "description": "Panel para visualizar métricas de redes sociales en tiempo real.",
-    "image": "https://images.pexels.com/photos/1181677/pexels-photo-1181677.jpeg?auto=compress&w=600&q=80",
-    "technologies": ["React", "Chart.js"],
-    "details": "Gráficas interactivas y filtros avanzados."
-  },
-  {
-    "id": 6,
-    "title": "Real Estate Platform",
-    "description": "Plataforma para gestión y búsqueda de propiedades inmobiliarias.",
-    "image": "https://images.pexels.com/photos/1181678/pexels-photo-1181678.jpeg?auto=compress&w=600&q=80",
-    "technologies": ["Next.js", "PostgreSQL"],
-    "details": "Buscador avanzado, mapas y panel de administración."
-  }
+    "title": "Snippet",
+    "description": "Base de conocimiento personal para guardar snippets de código, notas en Markdown, enlaces e imágenes, organizados en carpetas anidadas con temas personalizables.",
+    "image": "img/Snippet.png",
+    "technologies": ["React",
+    "Vite",
+    "JavaScript",
+    "CSS",],
+    "details": "Aplicación web con interfaz de escritorio construida en React y Vite que funciona como base de conocimiento personal. Permite crear snippets de cuatro tipos: código con resaltado de sintaxis por lenguaje (JavaScript, TypeScript, Python, Rust, Go, CSS, HTML, Bash, JSON, SQL, C++, Java), notas en Markdown con editor y vista previa en tiempo real, enlaces y imágenes mediante drag & drop. Los snippets se organizan en carpetas anidadas con colores personalizados, se pueden etiquetar, mover entre carpetas, fijar como favoritos y buscar por nombre, contenido o etiqueta. Incluye un modo quick note accesible con Ctrl+Shift+N que crea notas rápidas sin abrir el editor completo. El sistema de temas permite personalizar fondo, sidebar, tarjetas, texto y color de acento con presets incluidos (Light, Warm Dark, Graphite, Sepia, Nord, Dracula) o colores personalizados. Todo el estado (snippets, carpetas, ajustes, carpetas expandidas) se persiste automáticamente en localStorage sin necesidad de guardar manualmente. Los snippets de Markdown soportan tablas, checklists, citas, bloques de código con resaltado, código inline y enlaces internos entre snippets mediante el protocolo snippet:."  },
+ 
 ]
