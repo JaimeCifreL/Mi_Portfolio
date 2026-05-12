@@ -74,7 +74,7 @@ app.component('project-card', {
       </div>
       <div class="project-info">
         <div class="project-name" v-if="cardClass.includes('big')">{{ project.title }}</div>
-        <div class="project-desc" v-if="cardClass.includes('big')">{{ project.description }}</div>
+        <div class="project-desc">{{ project.description }}</div>
         <div class="project-tags">
           <span v-for="tech in project.technologies" :key="tech">{{ tech }}</span>
         </div>
