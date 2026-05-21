@@ -34,5 +34,5 @@
   "technologies": ["React", "Vite", "JavaScript", "CSS"],
   "details": "Aplicación web progresiva (PWA) construida en React y Vite para el seguimiento de hábitos diarios, recordatorios y metas personales. Los hábitos incluyen rachas, heatmap anual, puntos semanales y detalle individual con historial. El módulo de objetivos permite registrar avances numéricos con barra y anillo de progreso. Los recordatorios soportan eventos puntuales y rutinas diarias, semanales o mensuales con notificaciones push mediante Service Worker. La vista de calendario cruza hábitos y recordatorios por día. El sistema de temas permite personalizar el color de acento, fondo y tarjetas. Todo el estado se persiste automáticamente en localStorage.",
   "github": ""
-},
+}
 ]
