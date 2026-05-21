@@ -19,8 +19,7 @@ const app = Vue.createApp({
       return this.projects.filter(p => p.technologies.includes(this.selectedTech));
     },
     visibleProjects() {
-      if (this.showAllProjects || !this.isMobile) return this.filteredProjects;
-      return this.filteredProjects.slice(0, 2);
+      return this.filteredProjects;
     },
     isMobile() {
       return this.windowWidth <= 700;
